@@ -1,0 +1,1 @@
+find . -name '*~' -print -exec rm -r '{}' \; -or -name '*#' -print -exec rm -r '{}' \; -or -name '#*' -print -exec - rm -r '{}' \;
