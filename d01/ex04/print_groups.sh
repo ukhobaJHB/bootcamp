@@ -1,1 +1,1 @@
-groups | tr ' ' ','
+groups $FT_USER | tr ' ' ','
