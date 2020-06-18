@@ -1,2 +1,2 @@
-# vogsphere
+# Bootcamp Exercises
 WTC Bootcamp lessons
