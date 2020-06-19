@@ -6,11 +6,13 @@
 /*   By: ukhoba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 09:36:09 by ukhoba            #+#    #+#             */
-/*   Updated: 2020/06/19 09:06:31 by ukhoba           ###   ########.fr       */
+/*   Updated: 2020/06/19 09:18:55 by ukhoba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_print_alphabet(void);
 
 void	ft_putchar(char c)
 {
