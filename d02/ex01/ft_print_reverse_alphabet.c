@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ukhoba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/18 09:36:09 by ukhoba            #+#    #+#             */
-/*   Updated: 2020/06/19 09:21:02 by ukhoba           ###   ########.fr       */
+/*   Created: 2020/06/19 09:42:45 by ukhoba            #+#    #+#             */
+/*   Updated: 2020/06/19 09:51:38 by ukhoba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int		main(void)
+void	ft_print_reverse_alphabet(void)
 {
 	char	alphabet;
 
@@ -33,6 +33,4 @@ int		main(void)
 		}
 		alphabet--;
 	}
-
-	return 0;
 }
