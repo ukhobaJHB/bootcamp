@@ -6,7 +6,7 @@
 /*   By: ukhoba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 09:36:09 by ukhoba            #+#    #+#             */
-/*   Updated: 2020/06/19 09:18:55 by ukhoba           ###   ########.fr       */
+/*   Updated: 2020/06/19 09:49:08 by ukhoba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int		main(void)
+void	ft_print_alphabet(void)
 {
 	char	alphabet;
 
@@ -33,6 +33,4 @@ int		main(void)
 		}
 		alphabet++;
 	}
-
-	return 0;
 }
