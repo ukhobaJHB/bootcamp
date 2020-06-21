@@ -6,7 +6,7 @@
 /*   By: ukhoba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/19 16:43:28 by ukhoba            #+#    #+#             */
-/*   Updated: 2020/06/19 16:52:40 by ukhoba           ###   ########.fr       */
+/*   Updated: 2020/06/21 11:38:42 by ukhoba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,21 +35,40 @@ void	ft_print_comb2(void)
 		while	(b <= '9')
 		{			
 			c = '0';
+
 			while	(c <= '9')
 			{
 				d = '0';
 
-				while	(d <= '9')
+				if		(a == '9' && b == '9' && c == '9')
 				{
-					ft_putchar(a);
-					ft_putchar(b);
-					ft_putchar(' ');
-					ft_putchar(c);
-					ft_putchar(d);
-					ft_putchar(',');
-					ft_putchar(' ');
+					while   (d <= '8')
+                	{
+                    	ft_putchar(a);
+                    	ft_putchar(d);
+                    	ft_putchar(' ');
+                    	ft_putchar(c);
+                    	ft_putchar(b);
+                    	ft_putchar(',');
+                    	ft_putchar(' ');
 
-					d++;
+						d++;
+					}
+				}
+				else
+				{
+					while   (d <= '9')
+                	{
+                    	ft_putchar(a);
+                    	ft_putchar(b);
+                    	ft_putchar(' ');
+                    	ft_putchar(c);
+                    	ft_putchar(d);
+                    	ft_putchar(',');
+                    	ft_putchar(' ');
+
+						d++;
+					}
 				}
 
 				c++;
@@ -60,4 +79,11 @@ void	ft_print_comb2(void)
 
 		a++;
 	}
+}
+
+int		main(void)
+{
+	ft_print_comb2();
+	ft_putchar('\n');
+	return 0;
 }
