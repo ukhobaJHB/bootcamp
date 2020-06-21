@@ -1,5 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ukhoba <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/21 14:04:48 by ukhoba            #+#    #+#             */
+/*   Updated: 2020/06/21 14:04:56 by ukhoba           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>
 
 void	ft_putchar(char c)
 {
@@ -8,15 +21,26 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	char	char_arr;
 
-	sprintf(char_arr, "%d", nb);
-	ft_putchar(char_arr);
-}
+	char	digit_arr[256];
+	int		i;
 
-int		main(void)
-{
-	ft_putnbr(10);
+	if		(nb < 0)
+	{
+		ft_putchar('-');
+		nb = -nb;	
+	}
 
-	return 0;
+	sprintf(digit_arr, "%d", nb);
+
+	i = 0;
+
+	while	(nb)
+	{
+		ft_putchar(digit_arr[i]);
+		i++;
+		nb /= 10;
+	}
+	ft_putchar('\n');
+
 }
