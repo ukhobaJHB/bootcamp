@@ -6,7 +6,7 @@
 /*   By: ukhoba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/19 16:43:28 by ukhoba            #+#    #+#             */
-/*   Updated: 2020/06/21 11:38:42 by ukhoba           ###   ########.fr       */
+/*   Updated: 2020/06/21 11:53:38 by ukhoba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,11 +79,4 @@ void	ft_print_comb2(void)
 
 		a++;
 	}
-}
-
-int		main(void)
-{
-	ft_print_comb2();
-	ft_putchar('\n');
-	return 0;
 }
