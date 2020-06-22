@@ -6,13 +6,11 @@
 /*   By: ukhoba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/19 16:43:28 by ukhoba            #+#    #+#             */
-/*   Updated: 2020/06/21 11:53:38 by ukhoba           ###   ########.fr       */
+/*   Updated: 2020/06/22 13:01:07 by ukhoba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-void	ft_print_comb2(void);
 
 void	ft_putchar(char d)
 {
@@ -30,7 +28,7 @@ void	ft_print_comb2(void)
 
 	while	(a <= '9')
 	{
-		b = '0';
+		b = '0'; 
 
 		while	(b <= '9')
 		{			
@@ -40,35 +38,21 @@ void	ft_print_comb2(void)
 			{
 				d = '0';
 
-				if		(a == '9' && b == '9' && c == '9')
+				while   (d <= '9')
 				{
-					while   (d <= '8')
-                	{
-                    	ft_putchar(a);
-                    	ft_putchar(d);
-                    	ft_putchar(' ');
-                    	ft_putchar(c);
-                    	ft_putchar(b);
-                    	ft_putchar(',');
-                    	ft_putchar(' ');
 
-						d++;
+					if		(a < c || (a == c && b < d) )
+					{
+						ft_putchar(a);
+						ft_putchar(b);
+						ft_putchar(' ');
+						ft_putchar(c);
+						ft_putchar(d);
+						ft_putchar(',');
+						ft_putchar(' ');
 					}
-				}
-				else
-				{
-					while   (d <= '9')
-                	{
-                    	ft_putchar(a);
-                    	ft_putchar(b);
-                    	ft_putchar(' ');
-                    	ft_putchar(c);
-                    	ft_putchar(d);
-                    	ft_putchar(',');
-                    	ft_putchar(' ');
-
-						d++;
-					}
+					
+					d++;
 				}
 
 				c++;
@@ -79,4 +63,5 @@ void	ft_print_comb2(void)
 
 		a++;
 	}
+
 }
